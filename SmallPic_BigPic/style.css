@@ -1,0 +1,92 @@
+body{
+		margin: 0;
+		padding: 0;
+		background-color: #666;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style-type: none;
+	}
+	img{
+		border: none;
+	}
+	#playImg{
+		width: 720px;
+		height: 600px;
+		margin: 50px auto;
+		background-color: #ccc;
+		position: relative;
+	}
+	#btn_prev{
+		width: 360px;
+		height: 479px;
+		background-color: red;
+		z-index: 3000;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
+		filter:alpha(opacity=0);
+		background: url(images/prev.png) no-repeat left center;
+	} 
+	#btn_next{
+		width: 360px;
+		height: 479px;
+		background-color: green;
+		z-index: 3000;
+		position: absolute;
+		left: 360px;
+		top: 0;
+		opacity: 0.3;
+		filter:alpha(opacity=30);
+		background: url(images/next.png)no-repeat right center;
+	}
+	.big_pic{
+		width: 720px;
+		height: 479px;
+		position: relative;
+		background-color: #ccc;
+		overflow: hidden;
+	}
+	.big_pic li{
+		width: 720px;
+		height: 479px;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		cursor: pointer;
+	
+	}
+	.smallPic{
+		width: 720px;
+		height: 100px;
+		position: relative;
+		top: 10px;
+		left: 5px;
+		overflow: hidden;
+	}
+	.smallPic ul{
+		height: 100px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+	}
+	.smallPic ul li{
+		width: 230px;
+		height: 100px;
+		float: left;
+		padding-right: 10px;
+		opacity: 0.6;
+		filter:alpha(opacity=60);
+		cursor: pointer;
+	}
+	.smallPic img{
+		width: 230px;
+		height: 100px;
+	}
